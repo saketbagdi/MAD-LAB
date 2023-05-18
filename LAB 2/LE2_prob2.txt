@@ -1,0 +1,35 @@
+
+
+
+//Solution 2:
+
+
+class Mother
+{
+    
+    public void show()
+    {
+        System.out.println("Mother Class");
+    }
+    
+}
+class Child extends Mother{
+    public void show()
+    {
+        System.out.println("Child Class");
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Mother m = new Mother();
+	    
+	    m.show();
+	    Child ch = new Child();
+	    
+	    ch.show();
+		
+	}
+}
+

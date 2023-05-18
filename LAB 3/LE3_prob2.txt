@@ -1,0 +1,39 @@
+//solution 2:
+
+
+interface testable
+{
+    int a = 10;
+    void display();
+}
+
+class Test implements testable
+{
+    public void display()
+    {
+        System.out.println("Test class");
+    }
+}
+
+abstract class Abstest implements testable
+{
+    public void display()
+    {
+        System.out.println("Abstract class");
+    }
+}
+class AbTest extends Abstest
+{
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Test t1 = new Test();
+		t1.display();
+		System.out.println(t1.a);
+		AbTest t2 = new AbTest();
+		t2.display();
+		
+	}
+}

@@ -1,0 +1,191 @@
+//solution 3:
+/*
+
+abstract class Ducks{
+ void swim()
+ {
+ System.out.println(" can swim");
+ }
+ abstract void fly();
+ abstract void speak();
+}
+
+class RD extends Ducks{
+ void fly()
+ {
+ System.out.println(" RD cant fly");
+ }
+ void speak()
+ {
+ System.out.println(" RD squeaks");
+ }
+}
+
+class WD extends Ducks{
+ void fly()
+ {
+ System.out.println(" WD can't fly");
+ }
+ void speak()
+ {
+ System.out.println(" WD mute");
+ }
+}
+
+class RHD extends Ducks{
+ void fly()
+ {
+ System.out.println(" RHD can fly");
+ }
+ void speak()
+ {
+ System.out.println(" RHD quack");
+ }
+}
+
+class LD extends Ducks{
+ void fly()
+ {
+ System.out.println(" LD can fly");
+ }
+ void speak()
+ {
+ System.out.println(" LD quack");
+ }
+}
+
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.println();
+        RD R=new RD();
+        R.fly();
+        R.speak();
+        R.swim();
+        System.out.println();
+        
+        LD L=new LD();
+        L.fly();
+        L.speak();
+        L.swim();
+        System.out.println();
+        
+        RHD RH=new RHD();
+        RH.fly();
+        RH.speak();
+        RH.swim();
+        System.out.println();
+        
+        WD W=new WD();
+        W.fly();
+        W.speak();
+        W.swim();
+    }
+}
+
+*/
+
+//using interface
+/*
+interface Ducks
+{
+    void swim();
+    void fly();
+    void speak();
+    
+}
+
+
+class RD implements Ducks
+{
+    public void swim()
+    {
+        System.out.println(" can swim");
+    }
+    public void fly()
+    {
+        System.out.println(" can't fly");
+    }
+    public void speak()
+    {
+        System.out.println(" squeaks");
+    }
+}
+
+class LD implements Ducks
+{
+    public void swim()
+    {
+        System.out.println(" can swim");
+    }
+    public void fly()
+    {
+        System.out.println(" can fly");
+    }
+    public void speak()
+    {
+        System.out.println(" quack");
+    }
+}
+
+class RHD implements Ducks
+{
+    public void swim()
+    {
+        System.out.println(" can swim");
+    }
+    public void fly()
+    {
+        System.out.println(" can fly");
+    }
+    public void speak()
+    {
+        System.out.println(" quack");
+    }
+}
+
+class WD implements Ducks
+{
+    public void swim()
+    {
+        System.out.println(" can swim");
+    }
+    public void fly()
+    {
+        System.out.println(" can't fly");
+    }
+    public void speak()
+    {
+        System.out.println(" mute");
+    }
+}
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("RD : ");
+        RD R=new RD();
+        R.fly();
+        R.speak();
+        R.swim();
+        System.out.println();
+        System.out.println("LD : ");
+        LD L=new LD();
+        L.fly();
+        L.speak();
+        L.swim();
+        System.out.println();
+        System.out.println("RHD : ");
+        RHD RH=new RHD();
+        RH.fly();
+        RH.speak();
+        RH.swim();
+        System.out.println();
+        System.out.println("WD : ");
+        WD W=new WD();
+        W.fly();
+        W.speak();
+        W.swim();
+    }
+}

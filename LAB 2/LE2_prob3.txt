@@ -1,0 +1,43 @@
+
+
+//Solution 3:
+
+
+
+class Mother
+{
+    public int x = 10;
+    public static void show()
+    {
+        System.out.println("Mother Class");
+    }
+    
+}
+class Child extends Mother{
+     public static void show()
+    {
+        System.out.println("Child Class");
+    }
+}
+class Application
+{
+    public static void main(){
+        
+        Mother m1 = new Child();
+	    m1.show();
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Application ap  = new Application();
+	    ap.main();
+		
+	}
+}
+
+
+
+// if both class functions are non static then the child class function will be called
+// if any one of the class has static function then it throws error
+// if both class functions are ststic then Mother class function will be called
